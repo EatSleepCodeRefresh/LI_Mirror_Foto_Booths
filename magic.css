@@ -1,0 +1,3482 @@
+body, html {
+  height: 100%;
+}
+
+.desktop{
+	display:none;
+}
+
+.mobile{
+    display:inline;
+}
+
+.container {
+	width:100%;
+	color:#000000;
+}
+
+.navbar-default {
+	background-color:black;
+}
+
+nav {
+	position:relative;
+	z-index:100;
+}
+
+nav a {
+  font-weight: normal;
+  padding: 0px;
+ margin: 45px;
+}
+
+
+
+/*Company Name*/
+.logo {
+	font-size: 40px;
+	color: #33ffff;
+	text-shadow: 2px 2px #000000;
+	padding: 50px;
+	position: absolute; /* Declared position allows for location changes */
+    top: -295px; /* Moves the image 2px closer to the top of the page */
+}
+
+/*Company Slogan*/
+.slogan {
+	font-size: 15px;
+	color: #ffffff;
+	text-shadow: 2px 2px #000000;
+	padding: 50px;
+	position: relative; /* Declared position allows for location changes */
+    top: -210px; /* Moves the image 2px closer to the top of the page */
+}
+
+/*Logo Background Panel*/
+.bgimg-1 {
+  background-image:url("media/shutter.jpg");
+  background-size:100%;
+  background-repeat:no-repeat;
+  min-height: 36%;
+}
+
+/*About title settings*/
+#about {
+	color:#ffffff;
+}
+/*Gallery title settings*/
+#gallery {
+	color:#ffffff;
+}
+/*Booking title settings*/
+#booking {
+	color:#ffffff;
+}
+/*Gallery title settings*/
+#gallery {
+	color:#ffffff;
+}
+/*Booths title settings*/
+#packages {
+	color:#ffffff;
+}
+/*Contact title settings*/
+#contact {
+	color:#ffffff;
+}
+
+h2{
+	text-align:center;
+}
+
+/*Title of Each Panel*/
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #ffffff;
+  text-align:center;
+}
+
+p {
+	font-size:20px;
+	color: #33ffff;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about_us {
+	font-size:20px;
+	color: #33ffff;
+    text-align: justify;
+    text-justify: inter-word;
+	width:70%;
+	float: right;
+    margin-right: 220px;
+}
+
+th{
+	display:block;
+	text-align:center;
+}
+td {
+	display: block;
+	text-align: center;
+}
+
+/*fotobooth img seetings*/
+.fotobooth{
+	margin:4px;
+}
+/*packages table*/
+.plan-header{
+	display:block;
+	text-align:center;
+	font-size: 15px;
+	color: #33ffff;
+	float:left;
+	margin: 15px;
+}
+
+li {
+	list-style: none;
+}
+/*About Us Panel*/
+.bgimg-2 {
+  background:#000000;
+  min-height: 450px;
+  width:100%;
+}
+/*Choose A Booth Panel*/
+.bgimg-3 {
+  background:#000000;
+  min-height: 200px;
+  width:100%;
+}
+/*Gallery Panel*/
+.bgimg-4 {
+	background:#000000;
+	min-height:250px;
+	width:100%;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.demo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10vw;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  
+}
+.demo__gallery {
+  width: 688px;
+  padding:0px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #eee;
+  -webkit-perspective: 700px;
+          perspective: 700px;
+  border-radius: 5px;
+}
+.demo__part {
+  position: relative;
+  float: left;
+  width: 110px;
+  height: 110px;
+  margin: 2px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.demo__part:hover .demo__part-front {
+  box-shadow: 0 0 10px black;
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+.demo__part:hover .demo__part-front:after {
+  opacity: 0;
+}
+.demo__part-front, .demo__part-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.demo__part-front {
+  background-color: lightslategrey;
+  background-size: cover;
+  background-position: center;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.demo__part-front:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  content: "";
+  opacity: 0.5;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.demo__part-back {
+  -webkit-transform: rotateY(180deg) rotateX(0deg);
+          transform: rotateY(180deg) rotateX(0deg);
+}
+.demo__part-back-inner {
+  width: 680px;
+  height: 452px;
+  background-image: url(http://kirillkiyutin.com/img/nyc/nyc1.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.demo__help {
+  margin-bottom: 7px;
+  font-size: 20px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: white;
+ 
+}
+.demo__help a {
+  color: white;
+}
+.demo__help a:hover {
+  color: #E39999;
+}
+
+.demo__part-1-1 .demo__part-back-inner {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+.demo__part-1-2 .demo__part-back-inner {
+  -webkit-transform: translate(-114px, 0px);
+          transform: translate(-114px, 0px);
+}
+
+.demo__part-1-3 .demo__part-back-inner {
+  -webkit-transform: translate(-228px, 0px);
+          transform: translate(-228px, 0px);
+}
+
+.demo__part-1-4 .demo__part-back-inner {
+  -webkit-transform: translate(-342px, 0px);
+          transform: translate(-342px, 0px);
+}
+
+.demo__part-1-5 .demo__part-back-inner {
+  -webkit-transform: translate(-456px, 0px);
+          transform: translate(-456px, 0px);
+}
+
+.demo__part-1-6 .demo__part-back-inner {
+  -webkit-transform: translate(-570px, 0px);
+          transform: translate(-570px, 0px);
+}
+
+.demo__part-2-1 .demo__part-back-inner {
+  -webkit-transform: translate(0px, -114px);
+          transform: translate(0px, -114px);
+}
+
+.demo__part-2-2 .demo__part-back-inner {
+  -webkit-transform: translate(-114px, -114px);
+          transform: translate(-114px, -114px);
+}
+
+.demo__part-2-3 .demo__part-back-inner {
+  -webkit-transform: translate(-228px, -114px);
+          transform: translate(-228px, -114px);
+}
+
+.demo__part-2-4 .demo__part-back-inner {
+  -webkit-transform: translate(-342px, -114px);
+          transform: translate(-342px, -114px);
+}
+
+.demo__part-2-5 .demo__part-back-inner {
+  -webkit-transform: translate(-456px, -114px);
+          transform: translate(-456px, -114px);
+}
+
+.demo__part-2-6 .demo__part-back-inner {
+  -webkit-transform: translate(-570px, -114px);
+          transform: translate(-570px, -114px);
+}
+
+.demo__part-3-1 .demo__part-back-inner {
+  -webkit-transform: translate(0px, -228px);
+          transform: translate(0px, -228px);
+}
+
+.demo__part-3-2 .demo__part-back-inner {
+  -webkit-transform: translate(-114px, -228px);
+          transform: translate(-114px, -228px);
+}
+
+.demo__part-3-3 .demo__part-back-inner {
+  -webkit-transform: translate(-228px, -228px);
+          transform: translate(-228px, -228px);
+}
+
+.demo__part-3-4 .demo__part-back-inner {
+  -webkit-transform: translate(-342px, -228px);
+          transform: translate(-342px, -228px);
+}
+
+.demo__part-3-5 .demo__part-back-inner {
+  -webkit-transform: translate(-456px, -228px);
+          transform: translate(-456px, -228px);
+}
+
+.demo__part-3-6 .demo__part-back-inner {
+  -webkit-transform: translate(-570px, -228px);
+          transform: translate(-570px, -228px);
+}
+
+.demo__part-4-1 .demo__part-back-inner {
+  -webkit-transform: translate(0px, -342px);
+          transform: translate(0px, -342px);
+}
+
+.demo__part-4-2 .demo__part-back-inner {
+  -webkit-transform: translate(-114px, -342px);
+          transform: translate(-114px, -342px);
+}
+
+.demo__part-4-3 .demo__part-back-inner {
+  -webkit-transform: translate(-228px, -342px);
+          transform: translate(-228px, -342px);
+}
+
+.demo__part-4-4 .demo__part-back-inner {
+  -webkit-transform: translate(-342px, -342px);
+          transform: translate(-342px, -342px);
+}
+
+.demo__part-4-5 .demo__part-back-inner {
+  -webkit-transform: translate(-456px, -342px);
+          transform: translate(-456px, -342px);
+}
+
+.demo__part-4-6 .demo__part-back-inner {
+  -webkit-transform: translate(-570px, -342px);
+          transform: translate(-570px, -342px);
+}
+
+.show-front {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.pkm{
+    font-size:25px;
+}
+
+/*Bookings Panel*/
+.bgimg-5 {
+	background:#000000;
+	min-height: 800px;
+}
+/*Booking text settings*/
+form {
+	color: #33ffff;
+	
+}
+
+/*Booking input settings*/
+input{
+	background-color: #a6a6a6;
+}
+
+/*Booking Day settings*/
+#day{
+	background-color:#a6a6a6
+}
+
+/*Booking Month settings*/
+#date{
+	background-color:#a6a6a6
+}
+
+/*Contact Us Panel*/
+.bgimg-6 {
+	background:#000000;
+	min-height: 1000px;
+}
+/*Contact Info Labels*/
+li.info {
+	font-size: 20px;
+	color: #33ffff;
+	display:block;
+}
+.ownerQuote {
+    font-size: 28px; 
+    color: white;
+}
+
+/*photo shots from booth*/
+#photo{
+  float:right;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+#photo:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+/*Photo Grid Setup*/
+.grid{
+	width: 10%;
+	height:100px;
+	float: left;
+	margin: 1.66%;
+}
+/*Logo setup*/
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+/*Logo Setup*/
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  
+  letter-spacing: 10px;
+}
+
+
+/*Back to Top Button*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.contact{
+	width:50%;
+	text-align:center;
+}
+.booking{
+	width:80%;
+	text-align:center;
+	margin-right: 94px;
+	border-radius: 4px;
+}
+
+/* calendar */
+#cal {
+   display: none;
+   position: relative;
+   height: 400px;
+   width:400px;
+   top: 15px;
+   background-image:url("media/calendar.jpg");
+   background-size:cover;
+   color: white;
+   padding: 10px;
+   -moz-border-radius-topleft: 10px;
+   -webkit-border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
+   -moz-border-radius-topright: 10px;
+   -webkit-border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#cal table {
+   clear: both;
+}
+
+#cal table caption {
+   font-weight: bold;
+   font-size: 14pt;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   background: white;
+   width:140px;
+   text-align:center;
+}
+
+#cal table th {
+   text-align: right;
+   left:300px;
+}
+
+#cal table th, #cal table td {
+   width: 2em;
+   padding: 4px;
+}
+
+#cal table td {
+   color: rgb(178,184,183);
+   text-align: right;
+   cursor: pointer;
+   
+}
+
+#prev {
+   float: left;
+   padding: 4px;
+   cursor: pointer;
+}
+
+#next {
+   float: right;
+   padding: 4px;
+   cursor: pointer;
+}
+
+#cal table td.futuredate {
+   color: white;
+}
+
+#cal table td.futuredate:hover, #prev:hover, #next:hover, #close:hover {
+   background: red;
+   color: black;
+}
+
+#close {
+   color: white;
+   float: right;
+   padding: 0 4px;
+   cursor: pointer;
+}
+
+#close span {
+   font-size: 20pt;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+    position: relative;
+    left: 100px;
+}
+
+th {
+	display:inline;
+}
+
+td{
+	display:inline-block;
+}
+
+article {
+   padding: 20px 20px 40px;
+   background: rgb(216,217,219);
+   margin-top: 10px;
+   position: relative;
+}
+
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.boothImg {
+    border: 3px solid #33ffff;
+}
+
+.mob{
+    float: right;
+    margin-right: -10px;
+}
+
+/*************************************IPHONE X & Galaxy Phones***************************************************************/
+@media (min-width: 375px) and (max-width: 500px) {
+body, html {
+  height: 100%;
+  
+}
+
+.mobile{
+	display:inline;
+}
+
+.container {
+	width:100%;
+	color:#000000;
+}
+
+nav {
+	position:relative;
+	z-index:100;
+}
+
+nav a {
+  font-weight: normal;
+  padding:0px;
+ margin: 45px;
+}
+
+
+/*Company Name*/
+.logo {
+	font-size: 40px;
+	color: #33ffff;
+	text-shadow: 2px 2px #000000;
+	padding: 50px;
+	position: absolute; /* Declared position allows for location changes */
+    top: -400px; /* Moves the image 2px closer to the top of the page */
+}
+
+/*Company Slogan*/
+.slogan {
+	font-size: 15px;
+	color: #ffffff;
+	text-shadow: 2px 2px #000000;
+	padding: 50px;
+	position: relative; /* Declared position allows for location changes */
+    top: -300px; /* Moves the image 2px closer to the top of the page */
+}
+
+/*Logo Background Panel*/
+.bgimg-1 {
+  background-image:url("media/shutter.jpg");
+  background-size:100%;
+  background-repeat:no-repeat;
+  min-height: 35%;
+}
+
+/*About title settings*/
+#about {
+	color:#ffffff;
+}
+/*Gallery title settings*/
+#gallery {
+	color:#ffffff;
+}
+/*Booking title settings*/
+#booking {
+	color:#ffffff;
+}
+/*Gallery title settings*/
+#gallery {
+	color:#ffffff;
+}
+/*Booths title settings*/
+#packages {
+	color:#ffffff;
+}
+/*Contact title settings*/
+#contact {
+	color:#ffffff;
+}
+
+h2{
+	text-align:center;
+}
+
+/*Title of Each Panel*/
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #ffffff;
+  text-align:center;
+}
+
+p {
+	font-size:20px;
+	color: #33ffff;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about_us {
+	font-size:20px;
+	color: #33ffff;
+    text-align: justify;
+    text-justify: inter-word;
+	width:70%;
+	float: right;
+    margin-right: 220px;
+}
+
+
+th{
+	display:block;
+	text-align:center;
+}
+td {
+	display: block;
+	text-align: center;
+}
+
+/*fotobooth img seetings*/
+.fotobooth{
+	margin:4px;
+}
+/*packages table*/
+.plan-header{
+	display:block;
+	text-align:center;
+	font-size: 15px;
+	color: #33ffff;
+	float:left;
+	margin: 15px;
+}
+
+li {
+	list-style: none;
+}
+/*About Us Panel*/
+.bgimg-2 {
+  background:#000000;
+  min-height: 450px;
+  width:100%;
+}
+/*Choose A Booth Panel*/
+.bgimg-3 {
+  background:#000000;
+  min-height: 200px;
+  width:100%;
+}
+
+.boothImg {
+    border: 3px solid #33ffff;
+}
+
+/*Gallery Panel*/
+.bgimg-4 {
+	background:#000000;
+	min-height:850px;
+	width:100%;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.demo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10vw;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  
+}
+.demo__gallery {
+  width: 688px;
+  padding:0px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #eee;
+  -webkit-perspective: 700px;
+          perspective: 700px;
+  border-radius: 5px;
+}
+.demo__part {
+  position: relative;
+  float: left;
+  width: 110px;
+  height: 110px;
+  margin: 2px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.demo__part:hover .demo__part-front {
+  box-shadow: 0 0 10px black;
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+.demo__part:hover .demo__part-front:after {
+  opacity: 0;
+}
+.demo__part-front, .demo__part-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.demo__part-front {
+  background-color: lightslategrey;
+  background-size: cover;
+  background-position: center;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.demo__part-front:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  content: "";
+  opacity: 0.5;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.demo__part-back {
+  -webkit-transform: rotateY(180deg) rotateX(0deg);
+          transform: rotateY(180deg) rotateX(0deg);
+}
+.demo__part-back-inner {
+  width: 680px;
+  height: 452px;
+  background-image: url(http://kirillkiyutin.com/img/nyc/nyc1.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.demo__help {
+  margin-bottom: 7px;
+  font-size: 20px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: white;
+ 
+}
+.demo__help a {
+  color: white;
+}
+.demo__help a:hover {
+  color: #E39999;
+}
+
+.demo__part-1-1 .demo__part-back-inner {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+.demo__part-1-2 .demo__part-back-inner {
+  -webkit-transform: translate(-114px, 0px);
+          transform: translate(-114px, 0px);
+}
+
+.demo__part-1-3 .demo__part-back-inner {
+  -webkit-transform: translate(-228px, 0px);
+          transform: translate(-228px, 0px);
+}
+
+.demo__part-1-4 .demo__part-back-inner {
+  -webkit-transform: translate(-342px, 0px);
+          transform: translate(-342px, 0px);
+}
+
+.demo__part-1-5 .demo__part-back-inner {
+  -webkit-transform: translate(-456px, 0px);
+          transform: translate(-456px, 0px);
+}
+
+.demo__part-1-6 .demo__part-back-inner {
+  -webkit-transform: translate(-570px, 0px);
+          transform: translate(-570px, 0px);
+}
+
+.demo__part-2-1 .demo__part-back-inner {
+  -webkit-transform: translate(0px, -114px);
+          transform: translate(0px, -114px);
+}
+
+.demo__part-2-2 .demo__part-back-inner {
+  -webkit-transform: translate(-114px, -114px);
+          transform: translate(-114px, -114px);
+}
+
+.demo__part-2-3 .demo__part-back-inner {
+  -webkit-transform: translate(-228px, -114px);
+          transform: translate(-228px, -114px);
+}
+
+.demo__part-2-4 .demo__part-back-inner {
+  -webkit-transform: translate(-342px, -114px);
+          transform: translate(-342px, -114px);
+}
+
+.demo__part-2-5 .demo__part-back-inner {
+  -webkit-transform: translate(-456px, -114px);
+          transform: translate(-456px, -114px);
+}
+
+.demo__part-2-6 .demo__part-back-inner {
+  -webkit-transform: translate(-570px, -114px);
+          transform: translate(-570px, -114px);
+}
+
+.demo__part-3-1 .demo__part-back-inner {
+  -webkit-transform: translate(0px, -228px);
+          transform: translate(0px, -228px);
+}
+
+.demo__part-3-2 .demo__part-back-inner {
+  -webkit-transform: translate(-114px, -228px);
+          transform: translate(-114px, -228px);
+}
+
+.demo__part-3-3 .demo__part-back-inner {
+  -webkit-transform: translate(-228px, -228px);
+          transform: translate(-228px, -228px);
+}
+
+.demo__part-3-4 .demo__part-back-inner {
+  -webkit-transform: translate(-342px, -228px);
+          transform: translate(-342px, -228px);
+}
+
+.demo__part-3-5 .demo__part-back-inner {
+  -webkit-transform: translate(-456px, -228px);
+          transform: translate(-456px, -228px);
+}
+
+.demo__part-3-6 .demo__part-back-inner {
+  -webkit-transform: translate(-570px, -228px);
+          transform: translate(-570px, -228px);
+}
+
+.demo__part-4-1 .demo__part-back-inner {
+  -webkit-transform: translate(0px, -342px);
+          transform: translate(0px, -342px);
+}
+
+.demo__part-4-2 .demo__part-back-inner {
+  -webkit-transform: translate(-114px, -342px);
+          transform: translate(-114px, -342px);
+}
+
+.demo__part-4-3 .demo__part-back-inner {
+  -webkit-transform: translate(-228px, -342px);
+          transform: translate(-228px, -342px);
+}
+
+.demo__part-4-4 .demo__part-back-inner {
+  -webkit-transform: translate(-342px, -342px);
+          transform: translate(-342px, -342px);
+}
+
+.demo__part-4-5 .demo__part-back-inner {
+  -webkit-transform: translate(-456px, -342px);
+          transform: translate(-456px, -342px);
+}
+
+.demo__part-4-6 .demo__part-back-inner {
+  -webkit-transform: translate(-570px, -342px);
+          transform: translate(-570px, -342px);
+}
+
+.show-front {
+  -webkit-transform: none;
+          transform: none;
+}
+}
+
+
+/*Bookings Panel*/
+.bgimg-5 {
+	background:#000000;
+	min-height: 800px;
+}
+/*Booking text settings*/
+form {
+	color: #33ffff;
+	
+}
+
+/*Booking input settings*/
+input{
+	background-color: #a6a6a6;
+}
+
+/*Booking Day settings*/
+#day{
+	background-color:#a6a6a6
+}
+
+/*Booking Month settings*/
+#date{
+	background-color:#a6a6a6
+}
+
+/*Contact Us Panel*/
+.bgimg-6 {
+	background:#000000;
+	min-height: 1000px;
+}
+/*Contact Info Labels*/
+.info {
+	font-size: 40px;
+	color: #33ffff;
+	display:block;
+}
+/*Contact Email settings*/
+.email {
+	
+}
+
+/*photo shots from booth*/
+#photo{
+  float:right;
+  top: 50%;
+  left: 55%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 5px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+#photo:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+/*Photo Grid Setup*/
+.grid{
+	width: 10%;
+	height:100px;
+	float: left;
+	margin: 1.66%;
+}
+/*Logo setup*/
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+/*Logo Setup*/
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  
+  letter-spacing: 10px;
+}
+
+
+/*Back to Top Button*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding-left: 20px;
+	padding-right:20px;
+}
+
+.contact{
+	width:50%;
+	float:left;
+}
+.booking{
+	width:50%;
+	float:right;
+}
+
+/* calendar */
+#cal {
+   display: none;
+   position: relative;
+   height: 400px;
+   width:400px;
+   top: 15px;
+   background-image:url("media/calendar.jpg");
+   background-size:cover;
+   color: white;
+   padding: 10px;
+   -moz-border-radius-topleft: 10px;
+   -webkit-border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
+   -moz-border-radius-topright: 10px;
+   -webkit-border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#cal table {
+   clear: both;
+}
+
+#cal table caption {
+   font-weight: bold;
+   font-size: 14pt;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   background: white;
+   width:140px;
+   text-align:center;
+}
+
+#cal table th {
+   text-align: right;
+   left:300px;
+}
+
+#cal table th, #cal table td {
+   width: 2em;
+   padding: 4px;
+}
+
+#cal table td {
+   color: rgb(178,184,183);
+   text-align: right;
+   cursor: pointer;
+   
+}
+
+#prev {
+   float: left;
+   padding: 4px;
+   cursor: pointer;
+}
+
+#next {
+   float: right;
+   padding: 4px;
+   cursor: pointer;
+}
+
+#cal table td.futuredate {
+   color: white;
+}
+
+#cal table td.futuredate:hover, #prev:hover, #next:hover, #close:hover {
+   background: red;
+   color: black;
+}
+
+#close {
+   color: white;
+   float: right;
+   padding: 0 4px;
+   cursor: pointer;
+}
+
+#close span {
+   font-size: 20pt;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+    position: relative;
+    left: 100px;
+}
+
+th {
+	display:inline;
+}
+
+td{
+	display:inline-block;
+}
+
+article {
+   padding: 20px 20px 40px;
+   background: rgb(216,217,219);
+   margin-top: 10px;
+   position: relative;
+}
+
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+
+  }
+
+
+
+/***************************************************IPADS*****************************************************************/
+@media (min-width: 768px) and (max-width: 991px) {
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.mobile{
+	display:none;
+}
+
+nav {
+	position:relative;
+	z-index:100;
+}
+
+nav a {
+  font-weight: normal;
+  padding:0px;
+  margin: 5px;
+}
+
+.container {
+	width:100%;
+	color:#000000;
+}
+
+/*Company Name*/
+.logo {
+	font-size: 40px;
+	color: #33ffff;
+	text-shadow: 2px 2px #000000;
+	padding: 50px;
+	position: absolute; /* Declared position allows for location changes */
+    top: -340px; /* Moves the image 2px closer to the top of the page */
+}
+
+/*Company Slogan*/
+.slogan {
+	font-size: 15px;
+	color: #ffffff;
+	text-shadow: 2px 2px #000000;
+	padding: 50px;
+	position: relative; /* Declared position allows for location changes */
+    top: -244px; /* Moves the image 2px closer to the top of the page */
+}
+
+
+/*Logo Background Panel*/
+.bgimg-1 {
+  background-image:url("media/shutter.jpg");
+  background-size:100%;
+  min-height: 70%;
+}
+
+/*About title settings*/
+#about {
+	color:#ffffff;
+}
+/*Gallery title settings*/
+#gallery {
+	color:#ffffff;
+}
+/*Booking title settings*/
+#booking {
+	color:#ffffff;
+}
+/*Gallery title settings*/
+#gallery {
+	color:#ffffff;
+}
+/*Booths title settings*/
+#packages {
+	color:#ffffff;
+}
+/*Contact title settings*/
+#contact {
+	color:#ffffff;
+}
+
+h2{
+	text-align:center;
+}
+
+/*Title of Each Panel*/
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #ffffff;
+  text-align:center;
+}
+
+p {
+	font-size:35px;
+	color: #33ffff;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about_us {
+	font-size:35px;
+	color: #33ffff;
+    text-align: justify;
+    text-justify: inter-word;
+	width:70%;
+	float: right;
+    margin-right: 220px;
+}
+
+
+th{
+	display:block;
+	text-align:center;
+}
+td {
+	display: block;
+	text-align: center;
+}
+
+/*fotobooth img seetings*/
+.fotobooth{
+	margin:64px;
+}
+/*packages table*/
+.plan-header{
+	display:block;
+	text-align:center;
+	font-size: 15px;
+	color: #33ffff;
+	float:left;
+	margin: 15px;
+}
+
+li {
+	list-style: none;
+}
+/*About Us Panel*/
+.bgimg-2 {
+  background:#000000;
+  min-height: 450px;
+  width:100%;
+}
+/*Choose A Booth Panel*/
+.bgimg-3 {
+  background:#000000;
+  min-height: 200px;
+  width:100%;
+}
+
+.boothImg {
+    border: 3px solid #33ffff;
+}
+
+/*Gallery Panel*/
+.bgimg-4 {
+	background:#000000;
+	min-height:850px;
+	width:100%;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.demo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+ 
+}
+.demo__gallery {
+  width: 688px;
+  padding: 2px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #eee;
+  -webkit-perspective: 700px;
+          perspective: 700px;
+  border-radius: 5px;
+}
+.demo__part {
+  position: relative;
+  float: left;
+  width: 110px;
+  height: 110px;
+  margin: 2px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.demo__part:hover .demo__part-front {
+  box-shadow: 0 0 10px black;
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+.demo__part:hover .demo__part-front:after {
+  opacity: 0;
+}
+.demo__part-front, .demo__part-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.demo__part-front {
+  background-color: lightslategrey;
+  background-size: cover;
+  background-position: center;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.demo__part-front:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  content: "";
+  opacity: 0.5;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.demo__part-back {
+  -webkit-transform: rotateY(180deg) rotateX(0deg);
+          transform: rotateY(180deg) rotateX(0deg);
+}
+.demo__part-back-inner {
+  width: 680px;
+  height: 452px;
+  background-image: url(http://kirillkiyutin.com/img/nyc/nyc1.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.demo__help {
+  margin-bottom: 7px;
+  font-size: 30px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: white;
+}
+.demo__help a {
+  color: white;
+}
+.demo__help a:hover {
+  color: #E39999;
+}
+
+.demo__part-1-1 .demo__part-back-inner {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+.demo__part-1-2 .demo__part-back-inner {
+  -webkit-transform: translate(-114px, 0px);
+          transform: translate(-114px, 0px);
+}
+
+.demo__part-1-3 .demo__part-back-inner {
+  -webkit-transform: translate(-228px, 0px);
+          transform: translate(-228px, 0px);
+}
+
+.demo__part-1-4 .demo__part-back-inner {
+  -webkit-transform: translate(-342px, 0px);
+          transform: translate(-342px, 0px);
+}
+
+.demo__part-1-5 .demo__part-back-inner {
+  -webkit-transform: translate(-456px, 0px);
+          transform: translate(-456px, 0px);
+}
+
+.demo__part-1-6 .demo__part-back-inner {
+  -webkit-transform: translate(-570px, 0px);
+          transform: translate(-570px, 0px);
+}
+
+.demo__part-2-1 .demo__part-back-inner {
+  -webkit-transform: translate(0px, -114px);
+          transform: translate(0px, -114px);
+}
+
+.demo__part-2-2 .demo__part-back-inner {
+  -webkit-transform: translate(-114px, -114px);
+          transform: translate(-114px, -114px);
+}
+
+.demo__part-2-3 .demo__part-back-inner {
+  -webkit-transform: translate(-228px, -114px);
+          transform: translate(-228px, -114px);
+}
+
+.demo__part-2-4 .demo__part-back-inner {
+  -webkit-transform: translate(-342px, -114px);
+          transform: translate(-342px, -114px);
+}
+
+.demo__part-2-5 .demo__part-back-inner {
+  -webkit-transform: translate(-456px, -114px);
+          transform: translate(-456px, -114px);
+}
+
+.demo__part-2-6 .demo__part-back-inner {
+  -webkit-transform: translate(-570px, -114px);
+          transform: translate(-570px, -114px);
+}
+
+.demo__part-3-1 .demo__part-back-inner {
+  -webkit-transform: translate(0px, -228px);
+          transform: translate(0px, -228px);
+}
+
+.demo__part-3-2 .demo__part-back-inner {
+  -webkit-transform: translate(-114px, -228px);
+          transform: translate(-114px, -228px);
+}
+
+.demo__part-3-3 .demo__part-back-inner {
+  -webkit-transform: translate(-228px, -228px);
+          transform: translate(-228px, -228px);
+}
+
+.demo__part-3-4 .demo__part-back-inner {
+  -webkit-transform: translate(-342px, -228px);
+          transform: translate(-342px, -228px);
+}
+
+.demo__part-3-5 .demo__part-back-inner {
+  -webkit-transform: translate(-456px, -228px);
+          transform: translate(-456px, -228px);
+}
+
+.demo__part-3-6 .demo__part-back-inner {
+  -webkit-transform: translate(-570px, -228px);
+          transform: translate(-570px, -228px);
+}
+
+.demo__part-4-1 .demo__part-back-inner {
+  -webkit-transform: translate(0px, -342px);
+          transform: translate(0px, -342px);
+}
+
+.demo__part-4-2 .demo__part-back-inner {
+  -webkit-transform: translate(-114px, -342px);
+          transform: translate(-114px, -342px);
+}
+
+.demo__part-4-3 .demo__part-back-inner {
+  -webkit-transform: translate(-228px, -342px);
+          transform: translate(-228px, -342px);
+}
+
+.demo__part-4-4 .demo__part-back-inner {
+  -webkit-transform: translate(-342px, -342px);
+          transform: translate(-342px, -342px);
+}
+
+.demo__part-4-5 .demo__part-back-inner {
+  -webkit-transform: translate(-456px, -342px);
+          transform: translate(-456px, -342px);
+}
+
+.demo__part-4-6 .demo__part-back-inner {
+  -webkit-transform: translate(-570px, -342px);
+          transform: translate(-570px, -342px);
+}
+
+.show-front {
+  -webkit-transform: none;
+          transform: none;
+}
+
+
+
+/*Bookings Panel*/
+.bgimg-5 {
+	background:#000000;
+	min-height: 800px;
+}
+
+/*Booking text settings*/
+form {
+	color: #33ffff;
+	
+}
+
+/*Booking input settings*/
+input{
+	background-color: #a6a6a6;
+}
+
+/*Booking Day settings*/
+#day{
+	background-color:#a6a6a6
+}
+
+/*Booking Month settings*/
+#date{
+	background-color:#a6a6a6
+}
+
+
+/*Contact Us Panel*/
+.bgimg-6 {
+	background:#000000;
+	min-height: 800px;
+}
+/*Contact Info Labels*/
+.info {
+	font-size: 40px;
+	color: #33ffff;
+}
+/*Contact Email settings*/
+.email {
+	
+}
+
+/*photo shots from booth*/
+#photo{
+  float:right;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+#photo:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+/*Photo Grid Setup*/
+.grid{
+	width: 10%;
+	height:100px;
+	float: left;
+	margin: 1.66%;
+}
+/*Logo setup*/
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+/*Logo Setup*/
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  
+  letter-spacing: 10px;
+}
+
+/*Back to Top Button*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding-left: 20px;
+	padding-right:20px;
+}
+
+.contact{
+	width:50%;
+	float:left;
+}
+.booking{
+	width:50%;
+	float:right;
+}
+
+/* calendar */
+#cal {
+   display: none;
+   position: relative;
+   height: 400px;
+   width:400px;
+   top: 15px;
+   background-image:url("media/calendar.jpg");
+   background-size:cover;
+   color: white;
+   padding: 10px;
+   -moz-border-radius-topleft: 10px;
+   -webkit-border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
+   -moz-border-radius-topright: 10px;
+   -webkit-border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#cal table {
+   clear: both;
+}
+
+#cal table caption {
+   font-weight: bold;
+   font-size: 14pt;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   background: white;
+   width:140px;
+   text-align:center;
+}
+
+#cal table th {
+   text-align: right;
+   left:300px;
+}
+
+#cal table th, #cal table td {
+   width: 2em;
+   padding: 4px;
+}
+
+#cal table td {
+   color: rgb(178,184,183);
+   text-align: right;
+   cursor: pointer;
+   
+}
+
+#prev {
+   float: left;
+   padding: 4px;
+   cursor: pointer;
+}
+
+#next {
+   float: right;
+   padding: 4px;
+   cursor: pointer;
+}
+
+#cal table td.futuredate {
+   color: white;
+}
+
+#cal table td.futuredate:hover, #prev:hover, #next:hover, #close:hover {
+   background: red;
+   color: black;
+}
+
+#close {
+   color: white;
+   float: right;
+   padding: 0 4px;
+   cursor: pointer;
+}
+
+#close span {
+   font-size: 20pt;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+    position: relative;
+    left: 100px;
+}
+
+th {
+	display:inline;
+}
+
+td{
+	display:inline-block;
+}
+
+article {
+   padding: 20px 20px 40px;
+   background: rgb(216,217,219);
+   margin-top: 10px;
+   position: relative;
+}
+
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+
+}
+
+
+
+/******************************************LARGER DEVICES********************************************************************/
+@media (min-width: 992px) and (max-width: 1199px) {
+	body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+nav {
+	position:relative;
+	z-index:100;
+}
+
+nav a {
+  font-weight: normal;
+  padding:0px;
+ margin: 22px;
+}
+
+.container {
+	width:100%;
+	color:#000000;
+}
+
+/*Company Name*/
+.logo {
+	font-size: 140px;
+	color: #33ffff;
+	text-shadow: 2px 2px #000000;
+	padding: 50px;
+	position: relative; /* Declared position allows for location changes */
+    top: -132px; /* Moves the image 2px closer to the top of the page */
+}
+
+
+/*Logo Background Panel*/
+.bgimg-1 {
+  background-image:url("media/shutter.jpg");
+  background-size:100%;
+  min-height: 90%;
+}
+
+/*About title settings*/
+#about {
+	color:#ffffff;
+}
+/*Gallery title settings*/
+#gallery {
+	color:#ffffff;
+}
+/*Booking title settings*/
+#booking {
+	color:#ffffff;
+}
+/*Gallery title settings*/
+#gallery {
+	color:#ffffff;
+}
+/*Booths title settings*/
+#packages {
+	color:#ffffff;
+}
+/*Contact title settings*/
+#contact {
+	color:#ffffff;
+}
+
+h2{
+	text-align:center;
+}
+
+p {
+	font-size:35px;
+	color: #33ffff;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about_us {
+	font-size:35px;
+	color: #33ffff;
+    text-align: justify;
+    text-justify: inter-word;
+	width:70%;
+	float: right;
+    margin-right: 220px;
+}
+
+th{
+	display:block;
+	text-align:center;
+}
+td {
+	display: block;
+	text-align: center;
+}
+
+/*fotobooth img seetings*/
+.fotobooth{
+	margin:64px;
+}
+/*packages table*/
+.plan-header{
+	display:block;
+	text-align:center;
+	font-size: 15px;
+	color: #33ffff;
+	float:left;
+	margin: 15px;
+}
+
+li {
+	list-style: none;
+}
+/*About Us Panel*/
+.bgimg-2 {
+  background:#000000;
+  min-height: 450px;
+  width:100%;
+}
+/*Choose A Booth Panel*/
+.bgimg-3 {
+  background:#000000;
+  min-height: 200px;
+  width:100%;
+}
+
+img .boothImg {
+    border: 3px solid #33ffff;
+}
+
+/*Gallery Panel*/
+.bgimg-4 {
+	background:#000000;
+	min-height:850px;
+	width:100%;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.demo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+ 
+}
+.demo__gallery {
+  width: 688px;
+  padding: 2px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #eee;
+  -webkit-perspective: 700px;
+          perspective: 700px;
+  border-radius: 5px;
+}
+.demo__part {
+  position: relative;
+  float: left;
+  width: 110px;
+  height: 110px;
+  margin: 2px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.demo__part:hover .demo__part-front {
+  box-shadow: 0 0 10px black;
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+.demo__part:hover .demo__part-front:after {
+  opacity: 0;
+}
+.demo__part-front, .demo__part-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.demo__part-front {
+  background-color: lightslategrey;
+  background-size: cover;
+  background-position: center;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.demo__part-front:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  content: "";
+  opacity: 0.5;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.demo__part-back {
+  -webkit-transform: rotateY(180deg) rotateX(0deg);
+          transform: rotateY(180deg) rotateX(0deg);
+}
+.demo__part-back-inner {
+  width: 680px;
+  height: 452px;
+  background-image: url(http://kirillkiyutin.com/img/nyc/nyc1.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.demo__help {
+  margin-bottom: 7px;
+  font-size: 30px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: white;
+}
+.demo__help a {
+  color: white;
+}
+.demo__help a:hover {
+  color: #E39999;
+}
+
+.demo__part-1-1 .demo__part-back-inner {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+.demo__part-1-2 .demo__part-back-inner {
+  -webkit-transform: translate(-114px, 0px);
+          transform: translate(-114px, 0px);
+}
+
+.demo__part-1-3 .demo__part-back-inner {
+  -webkit-transform: translate(-228px, 0px);
+          transform: translate(-228px, 0px);
+}
+
+.demo__part-1-4 .demo__part-back-inner {
+  -webkit-transform: translate(-342px, 0px);
+          transform: translate(-342px, 0px);
+}
+
+.demo__part-1-5 .demo__part-back-inner {
+  -webkit-transform: translate(-456px, 0px);
+          transform: translate(-456px, 0px);
+}
+
+.demo__part-1-6 .demo__part-back-inner {
+  -webkit-transform: translate(-570px, 0px);
+          transform: translate(-570px, 0px);
+}
+
+.demo__part-2-1 .demo__part-back-inner {
+  -webkit-transform: translate(0px, -114px);
+          transform: translate(0px, -114px);
+}
+
+.demo__part-2-2 .demo__part-back-inner {
+  -webkit-transform: translate(-114px, -114px);
+          transform: translate(-114px, -114px);
+}
+
+.demo__part-2-3 .demo__part-back-inner {
+  -webkit-transform: translate(-228px, -114px);
+          transform: translate(-228px, -114px);
+}
+
+.demo__part-2-4 .demo__part-back-inner {
+  -webkit-transform: translate(-342px, -114px);
+          transform: translate(-342px, -114px);
+}
+
+.demo__part-2-5 .demo__part-back-inner {
+  -webkit-transform: translate(-456px, -114px);
+          transform: translate(-456px, -114px);
+}
+
+.demo__part-2-6 .demo__part-back-inner {
+  -webkit-transform: translate(-570px, -114px);
+          transform: translate(-570px, -114px);
+}
+
+.demo__part-3-1 .demo__part-back-inner {
+  -webkit-transform: translate(0px, -228px);
+          transform: translate(0px, -228px);
+}
+
+.demo__part-3-2 .demo__part-back-inner {
+  -webkit-transform: translate(-114px, -228px);
+          transform: translate(-114px, -228px);
+}
+
+.demo__part-3-3 .demo__part-back-inner {
+  -webkit-transform: translate(-228px, -228px);
+          transform: translate(-228px, -228px);
+}
+
+.demo__part-3-4 .demo__part-back-inner {
+  -webkit-transform: translate(-342px, -228px);
+          transform: translate(-342px, -228px);
+}
+
+.demo__part-3-5 .demo__part-back-inner {
+  -webkit-transform: translate(-456px, -228px);
+          transform: translate(-456px, -228px);
+}
+
+.demo__part-3-6 .demo__part-back-inner {
+  -webkit-transform: translate(-570px, -228px);
+          transform: translate(-570px, -228px);
+}
+
+.demo__part-4-1 .demo__part-back-inner {
+  -webkit-transform: translate(0px, -342px);
+          transform: translate(0px, -342px);
+}
+
+.demo__part-4-2 .demo__part-back-inner {
+  -webkit-transform: translate(-114px, -342px);
+          transform: translate(-114px, -342px);
+}
+
+.demo__part-4-3 .demo__part-back-inner {
+  -webkit-transform: translate(-228px, -342px);
+          transform: translate(-228px, -342px);
+}
+
+.demo__part-4-4 .demo__part-back-inner {
+  -webkit-transform: translate(-342px, -342px);
+          transform: translate(-342px, -342px);
+}
+
+.demo__part-4-5 .demo__part-back-inner {
+  -webkit-transform: translate(-456px, -342px);
+          transform: translate(-456px, -342px);
+}
+
+.demo__part-4-6 .demo__part-back-inner {
+  -webkit-transform: translate(-570px, -342px);
+          transform: translate(-570px, -342px);
+}
+
+.show-front {
+  -webkit-transform: none;
+          transform: none;
+}
+
+
+/*Bookings Panel*/
+.bgimg-5 {
+	background:#000000;
+	min-height: 800px;
+}
+/*Booking text settings*/
+form {
+	color: #33ffff;
+	
+}
+/*Booking input settings*/
+input{
+	background-color: #a6a6a6;
+}
+
+/*Booking Day settings*/
+#day{
+	background-color:#a6a6a6
+}
+
+/*Booking Month settings*/
+#date{
+	background-color:#a6a6a6
+}
+
+
+/*Contact Us Panel*/
+.bgimg-6 {
+	background:#000000;
+	min-height: 800px;
+}
+/*Contact Info Labels*/
+.info {
+	font-size: 40px;
+	color: #ffffff;
+}
+
+/*photo shots from booth*/
+#photo{
+  float:right;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+#photo:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+/*Photo Grid Setup*/
+.grid{
+	width: 10%;
+	height:100px;
+	float: left;
+	margin: 1.66%;
+}
+/*Logo setup*/
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+/*Logo Setup*/
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  
+  letter-spacing: 10px;
+}
+/*Title of Each Panel*/
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #ffffff;
+  text-align:center;
+}
+
+/*Back to Top Button*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding-left: 20px;
+	padding-right:20px;
+}
+
+.contact{
+	width:50%;
+	float:left;
+}
+.booking{
+	width:50%;
+	float:right;
+}
+
+/* calendar */
+#cal {
+   display: none;
+   position: relative;
+   height: 400px;
+   width:400px;
+   top: 15px;
+   background-image:url("media/calendar.jpg");
+   background-size:cover;
+   color: white;
+ 
+   -moz-border-radius-topleft: 10px;
+   -webkit-border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
+   -moz-border-radius-topright: 10px;
+   -webkit-border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#cal table {
+   clear: both;
+}
+
+#cal table caption {
+   font-weight: bold;
+   font-size: 14pt;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   background: white;
+   width:140px;
+   text-align:center;
+}
+
+#cal table th {
+   text-align: right;
+   left:300px;
+}
+
+#cal table th, #cal table td {
+   width: 2em;
+  
+}
+
+#cal table td {
+   color: rgb(178,184,183);
+   text-align: right;
+   cursor: pointer;
+   
+}
+
+#prev {
+   float: left;
+   padding: 4px;
+   cursor: pointer;
+}
+
+#next {
+   float: right;
+   padding: 4px;
+   cursor: pointer;
+}
+
+#cal table td.futuredate {
+   color: white;
+}
+
+#cal table td.futuredate:hover, #prev:hover, #next:hover, #close:hover {
+   background: red;
+   color: black;
+}
+
+#close {
+   color: white;
+   float: right;
+   padding: 0 4px;
+   cursor: pointer;
+}
+
+#close span {
+   font-size: 20pt;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+    position: relative;
+    left: 100px;
+}
+
+th {
+	display:inline;
+}
+
+td{
+	display:inline-block;
+}
+
+article {
+   padding: 20px 20px 40px;
+   background: rgb(216,217,219);
+   margin-top: 10px;
+   position: relative;
+}
+
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+
+}
+
+
+
+/****************************************************DESKTOP****************************************************************/
+@media (min-width: 1200px) {
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.mobile{
+	display:none;
+}	
+
+.desktop{
+    display:inline;
+}
+
+nav {
+	position:relative;
+	z-index:100;
+	height:40px;
+	width:100%;
+}
+
+nav a {
+  font-weight: normal;
+  padding:0px;
+  margin: 30px;
+  top: -40px;
+}
+
+.container {
+	width:100%;
+	color:#000000;
+}
+
+/*Company Name*/
+.logo {
+	font-size: 140px;
+	color: #33ffff;
+	text-shadow: 2px 2px #000000;
+	padding: 50px;
+	position: absolute; /* Declared position allows for location changes */
+    top: -200px; /* Moves the image 2px closer to the top of the page */
+}
+
+/*Company Slogan*/
+.slogan {
+	font-size: 40px;
+	color: #ffffff;
+	text-shadow: 2px 2px #000000;
+	padding: 50px;
+	position: relative; /* Declared position allows for location changes */
+    top: 140px; /* Moves the image 2px closer to the top of the page */
+}
+
+
+/*Logo Background Panel*/
+.bgimg-1 {
+  background-image:url("media/shutter.jpg");
+  background-size:100%;
+  min-height: 100%;
+}
+
+/*About title settings*/
+#about {
+	color:#ffffff;
+}
+/*Gallery title settings*/
+#gallery {
+	color:#ffffff;
+}
+/*Booking title settings*/
+#booking {
+	color:#ffffff;
+}
+/*Gallery title settings*/
+#gallery {
+	color:#ffffff;
+}
+/*Booths title settings*/
+#packages {
+	color:#ffffff;
+}
+/*Contact title settings*/
+#contact {
+	color:#ffffff;
+}
+
+h1 {
+    text-align:center;
+	color: #33ffff;
+}
+
+h2{
+	text-align:center;
+}
+
+/*Title of Each Panel*/
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 65px "Lato", sans-serif;
+  color: #ffffff;
+  text-align:center;
+}
+
+p {
+	font-size:35px;
+	color: #33ffff;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about_us {
+	font-size:35px;
+	color: #33ffff;
+    text-align: justify;
+    text-justify: inter-word;
+	width:80%;
+	float: right;
+    margin-right: 160px;
+}
+
+th{
+	display:block;
+	text-align:center;
+}
+td {
+	display: block;
+	text-align: center;
+}
+
+/*fotobooth img seetings*/
+.fotobooth{
+	margin:64px;
+}
+/*packages table*/
+.plan-header{
+	display:block;
+	text-align:center;
+	font-size: 15px;
+	color: #33ffff;
+	float:left;
+	margin: 15px;
+}
+
+li {
+	list-style: button;
+	display:block;
+}
+
+/*About Us Panel*/
+.bgimg-2 {
+  background-image: url("media/booths.jpg");
+  background-size:cover;
+  min-height: 680px;
+  width:100%;
+  
+}
+/*Choose A Booth Panel*/
+.bgimg-3 {
+  background-image: url("media/booths.jpg");
+  background-size:100%;
+  min-height: 850px;
+  width:100%;
+}
+/*Gallery Panel*/
+.bgimg-4 {
+	background-image: url("media/booths.jpg");
+	background-size:100%;
+	min-height:550px;
+	width:100%;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.demo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 99vw;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+ 
+}
+.demo__gallery {
+  width: 688px;
+  padding: 2px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #eee;
+  -webkit-perspective: 700px;
+          perspective: 700px;
+  border-radius: 5px;
+}
+.demo__part {
+  position: relative;
+  float: left;
+  width: 110px;
+  height: 110px;
+  margin: 2px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.demo__part:hover .demo__part-front {
+  box-shadow: 0 0 10px black;
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+.demo__part:hover .demo__part-front:after {
+  opacity: 0;
+}
+.demo__part-front, .demo__part-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.demo__part-front {
+  background-color: lightslategrey;
+  background-size: cover;
+  background-position: center;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.demo__part-front:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  content: "";
+  opacity: 0.5;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.demo__part-back {
+  -webkit-transform: rotateY(180deg) rotateX(0deg);
+          transform: rotateY(180deg) rotateX(0deg);
+}
+.demo__part-back-inner {
+  width: 680px;
+  height: 452px;
+  background-image: url(http://kirillkiyutin.com/img/nyc/nyc1.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.demo__help {
+  margin-bottom: 7px;
+  font-size: 30px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: white;
+}
+.demo__help a {
+  color: white;
+}
+.demo__help a:hover {
+  color: #E39999;
+}
+
+.demo__part-1-1 .demo__part-back-inner {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+.demo__part-1-2 .demo__part-back-inner {
+  -webkit-transform: translate(-114px, 0px);
+          transform: translate(-114px, 0px);
+}
+
+.demo__part-1-3 .demo__part-back-inner {
+  -webkit-transform: translate(-228px, 0px);
+          transform: translate(-228px, 0px);
+}
+
+.demo__part-1-4 .demo__part-back-inner {
+  -webkit-transform: translate(-342px, 0px);
+          transform: translate(-342px, 0px);
+}
+
+.demo__part-1-5 .demo__part-back-inner {
+  -webkit-transform: translate(-456px, 0px);
+          transform: translate(-456px, 0px);
+}
+
+.demo__part-1-6 .demo__part-back-inner {
+  -webkit-transform: translate(-570px, 0px);
+          transform: translate(-570px, 0px);
+}
+
+.demo__part-2-1 .demo__part-back-inner {
+  -webkit-transform: translate(0px, -114px);
+          transform: translate(0px, -114px);
+}
+
+.demo__part-2-2 .demo__part-back-inner {
+  -webkit-transform: translate(-114px, -114px);
+          transform: translate(-114px, -114px);
+}
+
+.demo__part-2-3 .demo__part-back-inner {
+  -webkit-transform: translate(-228px, -114px);
+          transform: translate(-228px, -114px);
+}
+
+.demo__part-2-4 .demo__part-back-inner {
+  -webkit-transform: translate(-342px, -114px);
+          transform: translate(-342px, -114px);
+}
+
+.demo__part-2-5 .demo__part-back-inner {
+  -webkit-transform: translate(-456px, -114px);
+          transform: translate(-456px, -114px);
+}
+
+.demo__part-2-6 .demo__part-back-inner {
+  -webkit-transform: translate(-570px, -114px);
+          transform: translate(-570px, -114px);
+}
+
+.demo__part-3-1 .demo__part-back-inner {
+  -webkit-transform: translate(0px, -228px);
+          transform: translate(0px, -228px);
+}
+
+.demo__part-3-2 .demo__part-back-inner {
+  -webkit-transform: translate(-114px, -228px);
+          transform: translate(-114px, -228px);
+}
+
+.demo__part-3-3 .demo__part-back-inner {
+  -webkit-transform: translate(-228px, -228px);
+          transform: translate(-228px, -228px);
+}
+
+.demo__part-3-4 .demo__part-back-inner {
+  -webkit-transform: translate(-342px, -228px);
+          transform: translate(-342px, -228px);
+}
+
+.demo__part-3-5 .demo__part-back-inner {
+  -webkit-transform: translate(-456px, -228px);
+          transform: translate(-456px, -228px);
+}
+
+.demo__part-3-6 .demo__part-back-inner {
+  -webkit-transform: translate(-570px, -228px);
+          transform: translate(-570px, -228px);
+}
+
+.demo__part-4-1 .demo__part-back-inner {
+  -webkit-transform: translate(0px, -342px);
+          transform: translate(0px, -342px);
+}
+
+.demo__part-4-2 .demo__part-back-inner {
+  -webkit-transform: translate(-114px, -342px);
+          transform: translate(-114px, -342px);
+}
+
+.demo__part-4-3 .demo__part-back-inner {
+  -webkit-transform: translate(-228px, -342px);
+          transform: translate(-228px, -342px);
+}
+
+.demo__part-4-4 .demo__part-back-inner {
+  -webkit-transform: translate(-342px, -342px);
+          transform: translate(-342px, -342px);
+}
+
+.demo__part-4-5 .demo__part-back-inner {
+  -webkit-transform: translate(-456px, -342px);
+          transform: translate(-456px, -342px);
+}
+
+.demo__part-4-6 .demo__part-back-inner {
+  -webkit-transform: translate(-570px, -342px);
+          transform: translate(-570px, -342px);
+}
+
+.show-front {
+  -webkit-transform: none;
+          transform: none;
+}
+
+
+
+/*Bookings Panel*/
+.bgimg-5 {
+	background-image: url("media/booths.jpg");
+	background-size:cover;
+	min-height: 1150px;
+}
+/*Booking text settings*/
+form {
+	color: #33ffff;
+}
+
+
+/*Booking input settings*/
+input{
+	background-color: #a6a6a6;
+}
+
+/*Booking Day settings*/
+#day{
+	background-color:#a6a6a6
+}
+
+/*Booking Month settings*/
+#date{
+	background-color:#a6a6a6
+}
+
+/*Contact Us Panel*/
+.bgimg-6 {
+	background-image: url("media/booths.jpg");
+	background-size:cover;
+	min-height: 800px;
+}
+/*Contact Info Labels*/
+li.info {
+	font-size: 40px;
+	color: #ffffff;
+}
+
+/*photo shots from booth*/
+#photo{
+  float:right;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+#photo:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+/*Photo Grid Setup*/
+.grid{
+	width: 10%;
+	height:100px;
+	float: left;
+	margin: 1.66%;
+}
+/*Logo setup*/
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+/*Logo Setup*/
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  
+  letter-spacing: 10px;
+}
+
+/*Back to Top Button*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding-left: 20px;
+	padding-right:20px;
+}
+
+.booking{
+	width:50%;
+	text-align:center;
+	margin-right: 334px;
+	border-radius: 4px;
+}
+
+img {
+	width: 30%;
+	float: left;
+	margin: 8.66%;
+	border: 3px solid #33ffff;
+	width:350px;
+}
+
+.boothImg {
+    border: 3px solid #33ffff;
+}
+
+/* calendar */
+#cal {
+   display: none;
+   position: relative;
+   height: 400px;
+   width:400px;
+   top: 15px;
+   background-image:url("media/calendar.jpg");
+   background-size:cover;
+   color: white;
+   padding: 10px;
+   -moz-border-radius-topleft: 10px;
+   -webkit-border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
+   -moz-border-radius-topright: 10px;
+   -webkit-border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#cal table {
+   clear: both;
+}
+
+#cal table caption {
+   font-weight: bold;
+   font-size: 14pt;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   background: white;
+   width:140px;
+   text-align:center;
+}
+
+#cal table th {
+   text-align: right;
+   left:300px;
+}
+
+#cal table th, #cal table td {
+   width: 2em;
+   padding: 4px;
+}
+
+#cal table td {
+   color: rgb(178,184,183);
+   text-align: right;
+   cursor: pointer;
+   
+}
+
+#prev {
+   float: left;
+   padding: 4px;
+   cursor: pointer;
+}
+
+#next {
+   float: right;
+   padding: 4px;
+   cursor: pointer;
+}
+
+#cal table td.futuredate {
+   color: white;
+}
+
+#cal table td.futuredate:hover, #prev:hover, #next:hover, #close:hover {
+   background: red;
+   color: black;
+}
+
+#close {
+   color: white;
+   float: right;
+   padding: 0 4px;
+   cursor: pointer;
+}
+
+#close span {
+   font-size: 20pt;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+    position: relative;
+    left: 100px;
+}
+
+th {
+	display:inline;
+}
+
+td{
+	display:inline-block;
+}
+
+article {
+   padding: 20px 20px 40px;
+   background: rgb(216,217,219);
+   margin-top: 10px;
+   position: relative;
+}
+
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+
+.imgC {
+	width:49%;
+	float:left;
+	background: linear-gradient(to bottom, #00ffff 0%, #ffffff 100%);
+	border: solid black 3px;
+	margin:4px;
+}
+
+.imgC2 {
+	width:49%;
+	float:right;
+	background: linear-gradient(to bottom, #00ffff 0%, #ffffff 100%);
+	border: solid black 3px;
+	margin:4px;
+}
+
+.imgC3 {
+	width:49%;
+	background: linear-gradient(to bottom, #00ffff 0%, #ffffff 100%);
+	border: solid black 3px;
+	margin:4px;
+}
+
+
+.pkImg {
+	float: left;
+	margin: 1.66%;
+	margin-top:3px;
+	height: 400px;
+	width: 46.5%;
+}
+
+.pkImg2 {
+	margin: 1.66%;
+	margin-top:3px;
+	height: 400px;
+	width: 46.5%;
+	float:right;
+}
+/*package 3*/
+.pkImg23 {
+	margin: 1.66%;
+	margin-top:3px;
+	height: 478px;
+	width: 46.5%;
+	float:right;
+}
+/*package 4*/
+.pkImg24 {
+	margin: 1.66%;
+	margin-top:3px;
+	height: 560px;
+	width: 46.5%;
+	float:left;
+}
+/*package 5*/
+.pkImg25 {
+	float: left;
+	margin: 1.66%;
+	margin-top:3px;
+	height: 634px;
+	width: 46.5%;
+}
+
+
+/*
+.picPack {
+	width:100%;
+	color:teal;
+	
+}
+
+.picPackB {
+	background: linear-gradient(to bottom, #00ffff 0%, #ffffff 100%);
+	border-radius:3px;
+	width:50%;
+}
+
+.picPack2 {
+	width:100%;
+	color:teal;
+	
+}
+
+.picPackBS {
+	background: linear-gradient(to bottom, #00ffff 0%, #ffffff 100%);
+	border-radius:3px;
+	width:50%;
+	float:right;
+}
+
+.ownerPic {
+	height:500px;
+	width:400px;
+	border-radius:4px;
+}
+*/
+.ownerQuote {
+    font-size: 28px; 
+    color: #33ffff;
+}
+
+iframe {
+    width:80%;
+	float: right;
+    margin-right: 160px;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+}
+
